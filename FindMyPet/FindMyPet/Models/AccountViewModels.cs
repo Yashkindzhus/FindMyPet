@@ -65,6 +65,22 @@ namespace FindMyPet.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "Имя")]
+        public string Name { get; set; }
+
+        [Required]
+        [Display(Name = "Фамилия")]
+        public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "Никнейм")]
+        public string Nickname { get; set; }
+
+        [Required]
+        [Display(Name = "Город")]
+        public string City { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Адрес электронной почты")]
         public string Email { get; set; }
