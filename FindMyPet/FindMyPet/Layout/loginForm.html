@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+
+    <link rel="stylesheet" href="style/loginForm.css">
+</head>
+<body>
+    <form class="form" method="POST">
+        <div class="form__title">
+          <h1>Log in</h1>
+        </div>
+        <div class="form__group">
+          <input class="form__input"
+            type="login"
+            id="username"
+            placeholder="First name"
+          />
+          <label class="form__label" for="username">Username</label>
+        </div>
+        <div class="form__group">
+          <input
+            class="form__input"
+            type="password"
+            id="Password"
+            autocorrect="off"
+            autocomplete=""
+            placeholder="Last name"
+          />
+          <label class="form__label" for="Password">Password</label>
+        </div>
+
+        <div class="form__buttons">
+          <button class="form__button" type="submit">Login</button>
+          <button class="form__button_facebook" type="submit">Login with Facebook</button>
+          <button class="form__button_gmail" type="submit">Login with Google</button>
+        </div>
+      </form>
+</body>
+</html>
