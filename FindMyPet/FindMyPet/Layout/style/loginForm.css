@@ -2,7 +2,8 @@
   width: 500px;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 16px #ccc;
+  -webkit-box-shadow: 0 4px 16px #ccc;
+          box-shadow: 0 4px 16px #ccc;
   letter-spacing: 1px;
   font-family: sans-serif;
   margin: 0 auto;
@@ -25,6 +26,7 @@
   left: 0;
   z-index: -1;
   color: #8c8a90;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -35,11 +37,24 @@
   border-bottom: 1px solid #e0e0e0;
   background-color: transparent;
   outline: none;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .form__input:focus {
   border-bottom: 1px solid #1a73a8;
+}
+
+.form__input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.form__input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.form__input::-ms-input-placeholder {
+  opacity: 0;
 }
 
 .form__input::placeholder {
@@ -55,9 +70,16 @@
 }
 
 .form__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
 }
 
@@ -67,17 +89,20 @@
   padding: 10px 20px;
   border: none;
   border-radius: 50px;
-  box-shadow: 0 4px 15px #ccc;
+  -webkit-box-shadow: 0 4px 15px #ccc;
+          box-shadow: 0 4px 15px #ccc;
   color: #fff;
   background-color: #61b8ff;
   outline: none;
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-top: 20px;
 }
 
 .form__button:hover {
   background-color: #4077a5;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -87,11 +112,13 @@
   padding: 10px 20px;
   border: none;
   border-radius: 50px;
-  box-shadow: 0 4px 15px #ccc;
+  -webkit-box-shadow: 0 4px 15px #ccc;
+          box-shadow: 0 4px 15px #ccc;
   color: #fff;
   background-color: #61b8ff;
   outline: none;
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   background: url(..//img/facebook.svg) no-repeat;
   color: #425a94;
@@ -100,6 +127,7 @@
 
 .form__button_facebook:hover {
   background-color: #2b4677;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #fff;
 }
@@ -110,11 +138,13 @@
   padding: 10px 20px;
   border: none;
   border-radius: 50px;
-  box-shadow: 0 4px 15px #ccc;
+  -webkit-box-shadow: 0 4px 15px #ccc;
+          box-shadow: 0 4px 15px #ccc;
   color: #fff;
   background-color: #61b8ff;
   outline: none;
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   background: url(..//img/google-hangouts.svg) no-repeat;
   color: #6899da;
@@ -123,6 +153,7 @@
 
 .form__button_gmail:hover {
   background-color: #8cec8cbd;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 /*# sourceMappingURL=loginForm.css.map */
